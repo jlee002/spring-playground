@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+//@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/user")
 public class UserController {
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public User getUser(@PathVariable String id, @RequestParam(value="test", defaultValue="test") String test) {
 		User user = new User();
 		user.setId(Integer.parseInt(id));
-		user.setUername("User Name");
+		user.setUsername("User Name");
 		user.setEmail("user1@email.com");
 		System.out.println("User: " + user);
 		return user;

@@ -2,7 +2,7 @@ package org.light.stuff.base.entity;
 
 public class User {
 	private int id;
-	private String uername;
+	private String username;
 	private String email;
 	private String password;
 	public int getId() {
@@ -11,11 +11,11 @@ public class User {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getUername() {
-		return uername;
+	public String getUsername() {
+		return username;
 	}
-	public void setUername(String uername) {
-		this.uername = uername;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public String getEmail() {
 		return email;
@@ -31,6 +31,6 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", uername=" + uername + ", email=" + email + ", password=" + password + "]";
+		return "User [id=" + id + ", uername=" + username + ", email=" + email + ", password=" + password + "]";
 	}
 }
